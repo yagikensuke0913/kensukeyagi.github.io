@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+.box {
+    
+    background-color: darkgray;
+    text-align:center;
+    width: 200px;
+    padding: 20px;
+    border: 2px solid red;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px 5px;
+    border-radius: 10px;
+    background: linear-gradient(90deg,rgb(209, 209, 209),rgb(2, 2, 2));
+}
+/*base style*/
+body{
+    font-family: 'Noto Sans JP', "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color:#333;
+
+}
+
+/*section*/
+.section {
+    padding: 30px 15px;
+}
+.section.section-secounday {
+    background: #efefef;
+}
+.section-headline {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 40px;
+}
+
+/*hero*/
+.hero {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.hero > strong {
+    position:absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 120px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.hero > video {
+    position: absolute;
+    z-index: 1;
+    width: auto;
+    height: 105%;
+}
+
+
+/*about*/
+.about {
+    margin: 0;
+    display: flex;
+}
+/*.about-amage {}*/
+.about-caption {
+    padding: 15px;
+}
+.about-headline {
+    margin: 0 0 20px;
+    font-size: 30px;
+}
+/*.about-description {}*/
+
+.grid {
+    margin: 0;
+    padding: 0;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.grid-item{
+    list-style: none;
+}
+.grid-col-2 > .grid-item{
+    width: 50%;
+}
+.grid-col-3 > .grid-item{
+    width: 33.3%;
+}
+.grid-col-4 > .grid-item {
+    width: 25%;
+}
+
+/*feature*/
+
+.feature {
+    text-align: center;
+    padding: 0 15px;
+}
+.feature-headline {
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+.feature-img {
+    margin: 0 0 20px;
+}
+.feature-description {
+    text-align: left;
+}
+
+/*card*/
+
+.card {
+    padding: 0 10px;
+}
+.card-link {
+    display: block;
+    color:#333;
+    text-decoration: none;
+    position: relative;
+    transition: background-color .25s;
+}
+.card-link:hover {
+    background-color:#eee;
+}    
+.card-label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color:#999;
+    color:#fff;
+    display: block;
+    padding: 5px 10px;
+    font-size: 12px;
+
+}    
+.card-image {
+    width: 100%;
+    height: auto;
+}    
+.card-info {
+    padding: 5px 10px;
+}
+/*.card-time {}*/
+.card-headline {
+    margin: 0;
+}
+.card-description {
+    margin: 0;
+}
+
+/*avator*/
+
+.avator {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+}
+.avator-name {
+    font-weight: bold;
+    padding-left: 15px;
+}
+.avator-image {
+    margin: 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
